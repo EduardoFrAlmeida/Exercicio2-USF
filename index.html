@@ -1,0 +1,120 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>USF - EXERCÍCIO 2</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+	
+	<!------------------------------------------------------------------------------------------------------------>
+	<h1><b>USF - EXERCÍCIO 2</b></h1>
+	<br>
+	<br>Utilizando-se de Javascript/JQuery/Bootstrap, verifique o que cada exercício solicita.
+	<br>Fique a vontade se desejar fazer pequenas alterações no HTML
+	<br>Pode utilizar qualquer biblioteca do JQuery
+	<br>Pode utilizar qualquer classe de estilo do Boostrap para estilizar, use seu conhecimento e MUITA criatividade! 
+	<br>Link para consultas: https://getbootstrap.com.br/
+	<br>Link para consultas: https://jquery.com/
+	<!------------------------------------------------------------------------------------------------------------>
+	
+	
+	
+	<!------ Exercício 2.1 ------------------------------------------------------------------------------------------------------>
+    <hr>
+    <h4>2.1 - Utilizando exclusivamente de JQuery, ao clicar em cada botão mostra-se a div relacionada ao conteúdo</h4>
+        
+    <script>
+        $(function () {
+            $(".btn-toggle").click(function (e) {
+                e.preventDefault();
+                el = $(this).data('element');
+                $(el).toggle();
+            });
+        });
+    </script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+    <script>
+        $(function () {
+            $(".btn-toggle").click(function (e) {
+                e.preventDefault();
+                el = $(this).data('element');
+                $(el).toggle();
+            });
+        });
+    </script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <button type="button" class="btn-toggle" data-element="#cursos">Cursos</button>
+    <div id="cursos" style="display:none">
+        Medicina <br>
+        Direito <br>
+        Administração <br>
+        Biologia <br>
+        Odontologia <br>
+        Fisioterapia <br>
+    </div>
+
+
+    <button type="button" class="btn-toggle" data-element="#unidades">Unidades</button>
+    <div id="unidades" style="display:none">
+        Bragança Paulista <br>
+        Campinas - Swift <br>
+        Campinas - Cambuí <br>
+        Itatiba <br>
+        Polos EAD <br>
+    </div>
+
+
+    <button type="button" class="btn-toggle" data-element="#descontos_e_bolsas">Descontos e Bolsas</button>
+    <div id="descontos_e_bolsas" style="display:none">
+        Desconto Irmãos <br>
+        Desconto Ex-Alunos <br>
+        Desconto Antecipação <br>
+        Bolsa PROUNI <br>
+        Bolsa EDUCAFRO <br>
+        Bolsa Social <br>
+    </div>
+    <button type="button" class="btn-toggle" data-element="#descontos_e_bolsas">Descontos e Bolsas</button>
+
+	<!------ Exercício 2.2 ------------------------------------------------------------------------------------------------------>
+	<hr>
+	<h4>2.2 - Utilizando exclusivamente de JQuery, crie um metodo para transferir o conteúdo entre os BOX1 e BOX2
+	<br>
+	<select  multiple name="BOX1" id="BOX1">
+          <option value="José">José</option>
+          <option value="Pedro">Pedro</option>
+		  <option value="Maria">Maria</option>
+		  <option value="João">João</option>
+		  <option value="Paulo">Paulo</option>
+		  <option value="Francisco">Francisco</option>
+    </select>
+	
+	
+	<select  multiple name="BOX2" id="BOX2">
+		<option value="José">Nádia</option>
+    </select>
+
+	<br>
+	<button>Copiar item(s) selecionado(s) do BOX1 para BOX2</button>	
+	<button>Copiar item(s) selecionado(s) do BOX2 para BOX1</button>	
+
+    
+	<!------ Exercício 2.3 ------------------------------------------------------------------------------------------------------>
+	   <hr>
+    <h4>2.3 - Há erro no script abaixo - corrigir a(s) function(s), ao clicar no botão "Função 1", a página deve mostrar o
+        alert com o numero 738</h4>
+    
+    <script>
+
+        function funcao1() {
+            alert('738');
+        }
+
+    </script>
+    <button type="submit" class="btn btn-primary" id="btn_cadastro" onclick="funcao1()">Função 1</button>
+    </body>
+  
+    
